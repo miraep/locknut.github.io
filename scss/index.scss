@@ -1,0 +1,173 @@
+html,body{height: 100%;}
+#container{
+	width: 100%; height: 100%;
+	>#header_left{
+		width: 200px; height: 100%;
+		background-color: #ad9;
+		float: left;
+		border-right: 1px solid #f06;
+		box-sizing: border-box;
+		position: relative;
+		>h1{
+			position: absolute; z-index: 10000;
+			left: 0; top: 0;
+			width: 100%; height: 200px;
+			background-color: #aa9;
+			>a{
+				width: 100%; height: 100%; display: block;
+				text-align: center; letter-spacing: 3px;
+				font-size: 30px; line-height: 200px;
+			}//a
+		}//h1
+		>div.basket{
+			position: absolute; z-index: 10000;
+			top: 250px; left: 50px;
+			margin: 0 auto;
+			width: 100px; height: 40px;
+			background-color: #f91;
+			font-size: 30px;
+		}//basket
+		>.gnb_box{
+			position: absolute; z-index: 10000;
+			top: 300px; left: 25px;
+			margin: 0 auto;
+			width: 150px; height: 400px;
+			background-color: #a83;
+			dt{
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}//td
+			>dl.gnb{
+				width: 100%; height: 70%;
+				background-color: #ac9;
+				>dt{
+					width: auto; height: 30px;
+					line-height: 30px;
+					cursor: pointer;
+				}//td
+				>dd{
+					margin: 0 auto;
+					width: auto; height: 15px;
+				//dd 가로 각 크기별로 주기~ 일단 text-a :c 으로 해둠 
+					>a{
+						font-size: 13px; text-align: center;
+						width: 100%; height: 100%; display: block;
+					}//a
+				}//li
+			}//dl
+			>dl.lnb{
+				width: 100%; height: 30%;
+				background-color: #9a9;
+				>dt{
+					width: auto; height: 30px;
+					line-height: 30px;
+					cursor: pointer;
+				}//td
+				>dd{
+					margin: 0 auto;
+					width: auto; height: 15px;
+					>a{
+						font-size: 13px; text-align: center;
+						width: 100%; height: 100%; display: block;
+					}//a
+				}//li
+			}//dl
+		}//gnb
+		>.foot_logo{
+			position: absolute; z-index: 10000;
+			bottom: 0; left: 25px;
+			margin: 0 auto;
+			cursor: pointer;
+			width: 150px; height: 50px;
+			background-color: #d8d;
+		}//footlogo
+	}//header_left
+	>#content{
+		width: calc(100% - 200px); height: 100%;
+		background-color: #d93;
+		float: right;
+		.main_box{
+			width: 100%; height: 600px;
+			background-color: #fa1;
+			>dl{
+				width: 100%; height: 100%; background-color: #ff1;
+				>dt{
+					width: 50%; height: 100%;
+					background-color: #ddd;
+					float: left;
+					position: relative;
+				&:hover .hidden_box{opacity: 1;}
+					>.hidden_box{
+						transition: all 0.2s;
+						opacity: 0;
+						position: absolute;
+						left: 0; top: 0; z-index: 1000;
+						width: 100%; height: 100%;
+						background-color: rgba(#000,0.7);
+						>h2{
+							display: block;
+							width: 100%; height: 100%;
+							>a{
+								width: 100%; height: 100%;display: block;
+								color:#fff; text-align: center;
+								font-weight: bold; font-size: 50px;
+								line-height: 600px;
+							}//a
+						}//h2
+					}//hidebox
+				}//dt
+				>dd{
+					float: left;
+					width: 50%; height: 50%;
+				&.main_box_2{
+					background-color: #faf;
+					position: relative;
+				&:hover .hidden_box{opacity: 1;}
+					>.hidden_box{
+						transition: all 0.2s;
+						opacity: 0;
+						position: absolute;
+						left: 0; top: 0; z-index: 1000;
+						width: 100%; height: 100%;
+						background-color: rgba(#000,0.7);
+						>h2{
+							display: block;
+							width: 100%; height: 100%;
+							>a{
+								width: 100%; height: 100%;display: block;
+								color:#fff; text-align: center;
+								font-weight: bold; font-size: 50px;
+								line-height: 300px;
+							}//a
+						}//h2
+					}//hidebox
+				}//dd1
+				&.main_box_3{
+					background-color: #aff;
+					position: relative;
+				&:hover .hidden_box{opacity: 1;}
+					>.hidden_box{
+						transition: all 0.2s;
+						opacity: 0;
+						position: absolute;
+						left: 0; top: 0; z-index: 1000;
+						width: 100%; height: 100%;
+						background-color: rgba(#000,0.7);
+						>h2{
+							display: block;
+							width: 100%; height: 100%;
+							>a{
+								width: 100%; height: 100%;display: block;
+								color:#fff; text-align: center;
+								font-weight: bold; font-size: 50px;
+								line-height: 300px;
+							}//a
+						}//h2
+					}//hidebox
+				}//dd2
+				}//dd
+			}//dl
+		}//mainbox
+	}//content
+}//container
